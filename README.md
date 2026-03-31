@@ -164,6 +164,48 @@ Más detalle técnico en [`project/README.md`](project/README.md).
 - **Sin respuestas del LLM:** revisa que Azure u OpenAI estén bien configurados en `.env` y que no haya cuotas o firewall bloqueando.
 - **RAG vacío o errores BRE-B:** verifica que exista la carpeta del índice en `BREB_FAISS_INDEX_DIR` y que hayas ejecutado `build_breb_index` al menos una vez.
 
+## Publicar en GitHub
+
+En la carpeta del repositorio (`Prueba RAG`) ya está inicializado **Git** con commits listos para subir.
+
+### Opción A: GitHub CLI (recomendado)
+
+1. Inicia sesión (una vez por máquina):
+
+   ```bash
+   gh auth login
+   ```
+
+2. Crea el repositorio remoto y sube el código (elige un nombre sin espacios, por ejemplo `prueba-rag-orquestador`):
+
+   ```bash
+   cd "ruta\a\Prueba RAG"
+   git branch -M main
+   gh repo create TU_USUARIO/prueba-rag-orquestador --public --source=. --remote=origin --push
+   ```
+
+   Si el repo ya existe vacío en GitHub:
+
+   ```bash
+   git remote add origin https://github.com/TU_USUARIO/NOMBRE_REPO.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+### Opción B: Solo Git
+
+1. En [github.com/new](https://github.com/new) crea un repositorio **vacío** (sin README ni `.gitignore`).
+2. En tu PC:
+
+   ```bash
+   cd "ruta\a\Prueba RAG"
+   git branch -M main
+   git remote add origin https://github.com/TU_USUARIO/NOMBRE_REPO.git
+   git push -u origin main
+   ```
+
+Usa **HTTPS** con un [personal access token](https://github.com/settings/tokens) como contraseña, o configura **SSH** (`git@github.com:...`).
+
 ## Licencia
 
 Especifica aquí la licencia del proyecto si aplica.
