@@ -1,0 +1,29 @@
+# API
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+
+# Agente / RAG (base; ampliar versiones según necesidad)
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+langchain-huggingface>=0.1.0
+
+# Datos
+pandas>=2.2.0
+openpyxl>=3.1.0
+scikit-learn>=1.4.0
+
+# PDF y vectores / RAG local (CPU)
+pypdf>=5.0.0
+faiss-cpu>=1.9.0
+sentence-transformers>=2.2.0
+langchain-text-splitters>=0.3.0
+
+# UI demo
+streamlit>=1.40.0
+requests>=2.32.0
+
+# Utilidades
+python-dotenv>=1.0.0

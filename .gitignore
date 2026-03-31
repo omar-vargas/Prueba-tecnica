@@ -1,0 +1,24 @@
+# Entornos y secretos
+.venv/
+venv/
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Artefactos grandes opcionales en la raíz del workspace
+*.zip
+
+# Cursor / herramientas locales (opcional)
+.cursor/
