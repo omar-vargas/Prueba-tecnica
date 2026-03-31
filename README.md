@@ -208,4 +208,4 @@ Usa **HTTPS** con un [personal access token](https://github.com/settings/tokens)
 
 ## Licencia
 
-Especifica aquí la licencia del proyecto si aplica.
+Publica hecha por OMAR VARGAS para Banco de Bogota
